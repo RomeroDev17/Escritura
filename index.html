@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Blog de escritura para compartir relatos, poesía y consejos para escritores.">
+    <meta name="keywords" content="escritura, blog, relatos, poesía, consejos, escritores">
+    <meta name="author" content="Tu Nombre">
+    <title>Blog de Escritura</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Blog de Escritura</h1>
+            <p>Relatos y Poesía</p>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#introduccion">Introducción</a></li>
+            <li><a href="#escritura-creativa">Escritura Creativa</a></li>
+            <li><a href="#importancia">Importancia</a></li>
+            <li><a href="#contacto">Comentarios</a></li>
+        </ul>
+    </nav>
+
+    [<main class="flex-container">
+        <div class="sections">
+        <!-- Sección de Introducción al tema -->
+        <section id="introduccion">
+            <h2>Introducción al Tema</h2>
+            <p>Bienvenido a nuestro blog, un espacio dedicado a explorar el arte de la escritura. Aquí compartimos consejos, relatos y poesía para inspirar a escritores de todos los niveles. Creemos que la escritura es una herramienta poderosa para expresar ideas y emociones.</p>
+        </section>
+
+        <!-- Sección sobre Escritura Creativa -->
+        <section id="escritura-creativa">
+            <h2>Escritura Creativa</h2>
+            <p>La escritura creativa es una forma de arte que nos permite explorar nuestra imaginación y contar historias únicas. Ya sea a través de relatos cortos, poesía o novelas, esta práctica fomenta la creatividad y la expresión personal. En esta sección, compartimos consejos y ejercicios para ayudarte a desarrollar tu estilo y voz como escritor.</p>
+        </section>
+
+        <!-- Sección sobre la importancia de la escritura -->
+        <section id="importancia">
+            <h2>La Importancia de la Escritura</h2>
+            <p>Escribir no solo es una herramienta de comunicación, sino también un medio para reflexionar y conectar con los demás. A través de la escritura, podemos preservar historias, inspirar cambios y dar voz a nuestras emociones. Te invitamos a descubrir cómo la escritura puede enriquecer tu vida.</p>
+        </section>
+    </div>
+
+        <!-- Sección de Formulario de Contacto -->
+        <section id="contacto">
+            <h2>Reseña</h2>
+            <form action="/enviar" method="post">
+                <label for="nombre">Nombre:</label><br>
+                <input type="text" id="nombre" name="nombre" required><br>
+
+                <label for="email">Correo Electrónico:</label>
+                <input type="email" id="email" name="email" required><br>
+
+                <label for="mensaje">Mensaje:</label><br>
+                <textarea id="mensaje" name="mensaje" rows="4" required></textarea><br> 
+
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+    </main>
+    
+
+    <footer>
+        <p>&copy; 2024 Blog de Escritura. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>

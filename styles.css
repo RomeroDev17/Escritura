@@ -1,0 +1,146 @@
+/* Reseteo básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #900c3f;
+    color: #070707;
+    margin: 0;
+}
+
+/* Estilo del encabezado */
+header {
+    background-image: url("banner.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 600px;
+    width: 100;
+}
+
+header h1 {
+    text-align: center;
+    color: white;
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+
+header p {
+    font-size: 1.2rem;
+    text-align: center;
+    color: white;
+}
+
+/* Navegación */
+nav {
+    background-color: #3a0215;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 0.5rem 0;
+}
+
+nav ul li {
+    margin: 0 1rem;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 0.5rem 1rem;
+    transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #010502;
+    border-radius: 5px;
+}
+
+/* Contenedor principal */
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+}
+
+/* Secciones */
+section {
+    width: 100%;
+    max-width: 1200px;
+    /* margin-bottom: 40px; */
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background: #f9f9f9;
+    box-shadow: 0 2px 5px rgba(0, 0, 0,2);
+}
+
+section#contacto {
+    background: #9b7272;
+    color: white;
+}
+
+section#importancia {
+    background: white;
+}
+
+/* Formulario */
+form label {
+    display: block;
+    margin-top: 1rem;
+    color: #ffffff;
+}
+
+form input, 
+form textarea, 
+form button {
+    width: 100%;
+    padding: 10px;
+    margin-top: 0.5rem;
+    border: none;
+    border-radius: 5px;
+}
+
+form input, form textarea {
+    background: #ffffff;
+    color: #000;
+    border: 1px solid #ddd;
+}
+
+form button {
+    background-color: #3a0215;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+form button:hover {
+    background-color: #010502;
+}
+
+/* Pie de página */
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #0a0101;
+    color: white;
+    margin-top: 1rem;
+}
+
+/* Adaptabilidad móvil */
+@media (max-width: 768px) {
+    main {
+        flex-direction: column;
+    }
+}
